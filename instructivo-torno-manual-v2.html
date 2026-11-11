@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Instructivo de Seguridad – Torno Manual | Dimam S.A.S.</title>
+<style>
+:root{--y:#F5C518;--k:#111;--g:#555;--lg:#ECECEC;--r:#D62828;--ok:#1E7A3C}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#fff;color:var(--k);font-size:18px;line-height:1.5;-webkit-text-size-adjust:100%}
+.wrap{max-width:640px;margin:0 auto;padding:0 18px}
+.defs{position:absolute;width:0;height:0;overflow:hidden}
+.hd,h2{font-family:Impact,Haettenschweiler,"Arial Narrow Bold","Arial Black",Arial,sans-serif;font-weight:900;text-transform:uppercase}
+header{padding:28px 0 0;position:relative}
+h1{font-family:Impact,Haettenschweiler,"Arial Narrow Bold","Arial Black",Arial,sans-serif;font-size:38px;line-height:1.05;text-transform:uppercase;font-weight:900;text-shadow:2px 2px 0 var(--y)}
+h1 span{background:var(--y);padding:0 6px;text-shadow:none}
+.logo{display:inline-block;background:var(--r);color:var(--y);font-family:Impact,Arial Black,Arial,sans-serif;font-size:20px;padding:4px 10px;margin-top:14px;font-weight:900}
+.sub{font-size:17px;font-weight:700;color:var(--g);margin-top:12px}
+.bar-deco{height:14px;background:var(--y);margin-top:16px}
+section{margin-top:44px}
+h2{background:var(--y);font-size:23px;line-height:1.2;padding:10px 12px;display:flex;gap:12px;align-items:baseline}
+h2 i{font-style:normal}
+.intro{margin:14px 0 6px;color:var(--g);font-size:17px}
+h3{font-size:19px;font-weight:900;margin:26px 0 10px}
+.step{display:flex;gap:12px;align-items:center;padding:16px 0;border-bottom:2px solid var(--lg)}
+.num{flex:0 0 38px;height:38px;border-radius:50%;background:var(--k);color:var(--y);font-weight:900;font-size:20px;display:flex;align-items:center;justify-content:center}
+.ic{flex:0 0 58px;height:58px}
+svg{display:block}
+.ic svg{width:100%;height:100%}
+.step b{display:block;font-size:19px;margin-bottom:2px}
+.step p{font-size:16px;color:var(--g)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:10px}
+.cell{text-align:center;font-size:15px;color:var(--g)}
+.cell svg{width:96px;height:80px;margin:0 auto 6px}
+.cell b{display:block;color:var(--k);font-size:16px}
+.cmp{display:grid;grid-template-columns:1fr;gap:16px;margin-top:16px}
+.pose{border:4px solid var(--r);padding:12px}
+.pose.ok{border-color:var(--ok)}
+.tag{display:inline-block;color:#fff;background:var(--r);font-weight:900;font-size:16px;padding:4px 10px;margin-bottom:6px}
+.ok .tag{background:var(--ok)}
+.pose svg{width:100%;height:auto;margin:4px auto 8px}
+.pose p{font-size:16px}
+.why{border-left:6px solid var(--y);padding:4px 0 4px 14px;margin:20px 0}
+.callout{background:var(--k);color:var(--y);font-family:Impact,Arial Black,Arial,sans-serif;font-size:27px;text-align:center;padding:22px 14px;line-height:1.25;margin-top:20px;border-bottom:10px solid var(--y)}
+.pause{display:flex;gap:14px;align-items:center;background:var(--lg);padding:14px;margin-top:16px}
+.pause .ic{flex-basis:46px;height:46px}
+.sig{display:flex;gap:14px;align-items:center;border:3px solid var(--k);padding:10px;margin-top:12px}
+.sig .ic{flex-basis:84px;height:84px;background:var(--lg)}
+.sig b{font-size:19px;display:block}
+.sig span{font-size:15px;color:var(--g)}
+.act{display:flex;gap:12px;align-items:center;padding:12px 0;border-bottom:2px solid var(--lg)}
+.act .num{background:var(--y);color:var(--k);border:3px solid var(--k)}
+.act .ic{flex-basis:68px;height:68px}
+.act b{font-size:18px}
+.act small{display:block;font-size:15px;color:var(--g)}
+.warn{border:4px solid var(--r);padding:14px;margin-top:18px;font-weight:900;color:var(--r)}
+.tip{display:flex;gap:12px;align-items:center;padding:12px 0;border-bottom:2px solid var(--lg)}
+.tip .ic{flex-basis:52px;height:52px}
+footer{margin-top:48px;background:var(--k);color:#fff;text-align:center;padding:30px 18px 28px;border-top:14px solid var(--y)}
+footer p{font-family:Impact,Arial Black,Arial,sans-serif;font-size:25px;line-height:1.3;text-transform:uppercase}
+footer span{display:inline-block;margin-top:14px;background:var(--r);color:var(--y);font-family:Impact,Arial Black,Arial,sans-serif;padding:3px 12px;font-size:19px}
+@media(min-width:560px){.cmp{grid-template-columns:1fr 1fr}h1{font-size:46px}}
+</style>
+</head>
+<body>
+
+<!-- Piezas reutilizables: mano de 5 dedos, cabezas -->
+<svg class="defs" aria-hidden="true"><defs>
+  <g id="hand">
+    <rect x="-12" y="-24" width="24" height="26" rx="8" fill="#E3A97F"/>
+    <rect x="-12" y="-41" width="5" height="22" rx="2.5" fill="#E3A97F"/>
+    <rect x="-6" y="-45" width="5" height="26" rx="2.5" fill="#E3A97F"/>
+    <rect x="0" y="-43" width="5" height="24" rx="2.5" fill="#E3A97F"/>
+    <rect x="6" y="-38" width="5.5" height="19" rx="2.7" fill="#E3A97F"/>
+    <rect x="-18" y="-32" width="6" height="22" rx="3" fill="#E3A97F" transform="rotate(-38 -12 -8)"/>
+    <path d="M-6.5 -40v15M-1 -42v17M5.5 -38v13" stroke="#C98C62" stroke-width="1.2" fill="none"/>
+  </g>
+  <g id="head-s">
+    <circle r="14" fill="#E3A97F"/><circle cx="14" cy="3" r="3.5" fill="#E3A97F"/>
+    <path d="M-14 4A14 14 0 0 1 13 -5Q1 -6 -6 6Z" fill="#2B1D14"/>
+  </g>
+  <g id="head-f">
+    <circle r="13" fill="#E3A97F"/>
+    <path d="M-13 -1A13 13 0 0 1 13 -1Q7 -9 0 -8Q-7 -9 -13 -1Z" fill="#2B1D14"/>
+  </g>
+</defs></svg>
+
+<div class="wrap">
+
+<header>
+  <h1>Instructivo de Seguridad – <span>Torno Manual</span></h1>
+  <div class="logo">DIMAM S.A.S</div>
+  <p class="sub">Dimam S.A.S. | Control de Riesgos</p>
+  <div class="bar-deco"></div>
+</header>
+
+<!-- 2. INSPECCIÓN PREVIA -->
+<section>
+  <h2><i>1.</i> Inspección previa y elementos de seguridad</h2>
+  <p class="intro">Antes de encender el torno, verifique en este orden:</p>
+
+  <div class="step"><div class="num">1</div>
+    <div><b>Plato y seguro bien colocados</b><p>El plato y su seguro contra aflojamiento deben estar firmes: un plato suelto puede salir disparado.</p></div>
+    <div class="ic"><svg viewBox="0 0 58 58" fill="none" stroke="#111" stroke-width="3"><circle cx="29" cy="29" r="20" fill="#ECECEC"/><circle cx="29" cy="29" r="6" fill="#111"/><path d="M29 9v10M29 39v10M9 29h10M39 29h10"/></svg></div></div>
+
+  <div class="step"><div class="num">2</div>
+    <div><b>Llave del apriete retirada</b><p>Una llave olvidada en el plato se convierte en proyectil al arrancar.</p></div>
+    <div class="ic"><svg viewBox="0 0 58 58" fill="none" stroke="#111" stroke-width="3"><circle cx="17" cy="17" r="10" fill="#ECECEC"/><path d="M24 24l26 26M38 38l7-7M45 45l7-7"/><path d="M8 8l42 42" stroke="#D62828" stroke-width="3" opacity="0"/></svg></div></div>
+
+  <div class="step"><div class="num">3</div>
+    <div><b>Tornillos del portaherramientas apretados</b><p>Si la herramienta se mueve durante el corte, la pieza se daña y puede golpearle.</p></div>
+    <div class="ic"><svg viewBox="0 0 58 58" fill="none" stroke="#111" stroke-width="3"><rect x="8" y="22" width="30" height="16" fill="#ECECEC"/><path d="M38 28h12v4H38"/><circle cx="18" cy="30" r="3" fill="#111"/><circle cx="28" cy="30" r="3" fill="#111"/></svg></div></div>
+
+  <div class="step"><div class="num">4</div>
+    <div><b>Palanca de bloqueo bien apretada</b><p>Mantiene la herramienta fija y evita vibraciones y movimientos imprevistos.</p></div>
+    <div class="ic"><svg viewBox="0 0 58 58" fill="none" stroke="#111" stroke-width="3"><rect x="10" y="38" width="38" height="12" fill="#ECECEC"/><path d="M29 38V14"/><circle cx="29" cy="12" r="6" fill="#F5C518"/></svg></div></div>
+
+  <div class="step"><div class="num">5</div>
+    <div><b>Carcasas y resguardos en su lugar</b><p>Cubren engranajes y transmisiones. Sin ellos, el atrapamiento es posible: no opere.</p></div>
+    <div class="ic"><svg viewBox="0 0 58 58" fill="none" stroke="#111" stroke-width="3"><rect x="6" y="12" width="46" height="34" fill="#ECECEC"/><circle cx="21" cy="29" r="8"/><circle cx="38" cy="29" r="6"/><path d="M6 12l46 34" stroke="#D62828" stroke-width="0"/></svg></div></div>
+
+  <h3>Elementos de protección personal</h3>
+  <div class="grid">
+    <div class="cell"><svg viewBox="0 0 96 80"><path d="M22 6h26v28l26 10q8 3 8 12v6H18z" fill="#111"/><path d="M22 52h60" stroke="#fff" stroke-width="2"/><path d="M28 34h20" stroke="#fff" stroke-width="2"/></svg><b>Zapatos de seguridad</b>Punta de acero y suela antideslizante</div>
+    <div class="cell"><svg viewBox="0 0 96 80"><path d="M6 22h84M10 22q-4 20 20 22q14-1 16-14h4q2 13 16 14q24-2 20-22z" fill="#111"/><path d="M22 20q-6-12 8-14M74 20q6-12-8-14" stroke="#111" stroke-width="4" fill="none"/></svg><b>Protección visual</b>Gafas siempre puestas</div>
+    <div class="cell"><svg viewBox="0 0 96 80"><path d="M22 52V34a26 26 0 0 1 52 0v18" stroke="#111" stroke-width="7" fill="none"/><rect x="12" y="34" width="20" height="32" rx="9" fill="#111"/><rect x="64" y="34" width="20" height="32" rx="9" fill="#111"/></svg><b>Protección auditiva</b>Ruido constante del corte</div>
+    <div class="cell"><svg viewBox="0 0 96 80"><path d="M30 6l18 8 18-8 20 14-9 14-8-4v50H28V30l-8 4-9-14z" fill="#111" transform="scale(1 .95)"/><path d="M42 8l6 10 6-10" stroke="#fff" stroke-width="2" fill="none"/></svg><b>Ropa ceñida</b>Sin mangas sueltas, anillos ni cadenas</div>
+  </div>
+</section>
+
+<!-- 3. CONTROL POSTURAL -->
+<section>
+  <h2><i>2.</i> La postura también es seguridad</h2>
+  <p class="intro">Una máquina bien protegida no basta: el cuerpo también se lesiona cuando se trabaja forzado.</p>
+
+  <div class="cmp">
+    <div class="pose">
+      <span class="tag">✕ POSTURA INCORRECTA</span>
+      <svg viewBox="0 0 300 250" role="img" aria-label="Operario con la espalda encorvada frente al torno">
+        <path d="M0 242h300" stroke="#111" stroke-width="3"/>
+        <rect x="206" y="190" width="84" height="52" fill="#6B7B3A"/>
+        <rect x="196" y="128" width="94" height="64" fill="#E4E1DA" stroke="#111" stroke-width="3"/>
+        <rect x="196" y="134" width="16" height="46" fill="#222"/>
+        <path d="M100 152L92 236M100 152L126 236" stroke="#2E2E2E" stroke-width="18" stroke-linecap="round"/>
+        <path d="M82 240h22M118 240h26" stroke="#111" stroke-width="9" stroke-linecap="round"/>
+        <path d="M98 154Q78 112 136 108" stroke="#6E6E6E" stroke-width="40" stroke-linecap="round" fill="none"/>
+        <g transform="translate(166 116) rotate(32)"><use href="#head-s"/></g>
+        <path d="M136 114L182 148" stroke="#6E6E6E" stroke-width="14" stroke-linecap="round"/>
+        <use href="#hand" transform="translate(186 150) rotate(127) scale(.75)"/>
+        <path d="M60 118Q48 150 66 178" stroke="#D62828" stroke-width="6" fill="none" stroke-linecap="round"/>
+        <path d="M58 170l10 10 5-14z" fill="#D62828"/>
+        <path d="M36 40l22 38H14z" fill="#D62828" transform="translate(4 -4)"/><path d="M40 52v14" stroke="#fff" stroke-width="4" transform="translate(4 0)"/><circle cx="40" cy="72" r="2.4" fill="#fff" transform="translate(4 -3)"/>
+      </svg>
+      <p><b>Espalda encorvada y tronco muy inclinado.</b> La zona lumbar y los hombros cargan de más en cada pieza.</p>
+    </div>
+    <div class="pose ok">
+      <span class="tag">✓ POSTURA CORRECTA</span>
+      <svg viewBox="0 0 300 250" role="img" aria-label="Operario con el tronco recto cerca del torno">
+        <path d="M0 242h300" stroke="#111" stroke-width="3"/>
+        <rect x="206" y="190" width="84" height="52" fill="#6B7B3A"/>
+        <rect x="196" y="128" width="94" height="64" fill="#E4E1DA" stroke="#111" stroke-width="3"/>
+        <rect x="196" y="134" width="16" height="46" fill="#222"/>
+        <path d="M118 40v200" stroke="#1E7A3C" stroke-width="3" stroke-dasharray="7 8"/>
+        <g transform="translate(30 0)">
+          <path d="M108 152L100 236M108 152L128 236" stroke="#2E2E2E" stroke-width="18" stroke-linecap="round"/>
+          <path d="M90 240h22M122 240h26" stroke="#111" stroke-width="9" stroke-linecap="round"/>
+          <rect x="88" y="84" width="42" height="78" rx="19" fill="#6E6E6E"/>
+          <g transform="translate(112 62)"><use href="#head-s"/></g>
+          <path d="M116 102L136 130L154 142" stroke="#6E6E6E" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <use href="#hand" transform="translate(158 144) rotate(110) scale(.75)"/>
+        </g>
+        <circle cx="262" cy="44" r="20" fill="#1E7A3C"/><path d="M252 44l7 8 13-16" stroke="#fff" stroke-width="5" fill="none"/>
+      </svg>
+      <p><b>Tronco recto, rodillas sueltas y cuerpo cerca de la máquina.</b> Trabaje con los brazos al frente, sin inclinarse.</p>
+    </div>
+  </div>
+
+  <div class="why">
+    <b>La postura es control de riesgo.</b> Inclinar el tronco de forma repetida cansa la espalda y los hombros, baja la atención y aumenta el riesgo de error junto a piezas en movimiento. Cuidar la postura es tan importante como usar la guarda.
+  </div>
+
+  <div class="pause">
+    <div class="ic"><svg viewBox="0 0 48 48" fill="none" stroke="#111" stroke-width="3.5"><circle cx="24" cy="24" r="19"/><path d="M24 11v13l9 6"/></svg></div>
+    <div><b>Micro-pausas:</b> pare 1 o 2 minutos cada hora. Suelte los hombros, estire la espalda y abra y cierre las manos.</div>
+  </div>
+
+  <div class="callout">Si duele → para y ajusta tu postura</div>
+</section>
+
+<!-- 4. SEÑALES -->
+<section>
+  <h2><i>3.</i> Reconozca las señales de alerta</h2>
+  <p class="intro">Su cuerpo avisa antes de lesionarse. Si siente alguna de estas señales, no la ignore.</p>
+
+  <div class="sig"><div class="ic"><svg viewBox="0 0 84 84">
+    <g transform="translate(42 17)"><circle r="11" fill="#2B1D14"/></g>
+    <rect x="25" y="29" width="34" height="30" rx="11" fill="#6E6E6E"/>
+    <path d="M27 36L18 56M57 36L66 56" stroke="#6E6E6E" stroke-width="10" stroke-linecap="round"/>
+    <rect x="30" y="56" width="24" height="24" fill="#2E2E2E"/>
+    <rect x="25" y="46" width="34" height="12" fill="#D62828"/>
+    <path d="M10 44l-4-8M74 44l4-8M8 54h-6M76 54h6" stroke="#D62828" stroke-width="3" stroke-linecap="round"/></svg></div>
+    <div><b>Dolor o fatiga lumbar</b><span>Molestia o rigidez en la parte baja de la espalda.</span></div></div>
+
+  <div class="sig"><div class="ic"><svg viewBox="0 0 84 84">
+    <path d="M10 80V58q0-14 20-18h24q20 4 20 18v22z" fill="#6E6E6E"/>
+    <rect x="35" y="30" width="14" height="14" fill="#E3A97F"/>
+    <g transform="translate(42 22)"><use href="#head-f"/></g>
+    <path d="M26 44q8-6 16-6M58 44q-8-6-16-6" stroke="#D62828" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <rect x="36" y="32" width="12" height="9" fill="#D62828" opacity=".85"/>
+    <path d="M8 36l-4-6M76 36l4-6" stroke="#D62828" stroke-width="3" stroke-linecap="round"/></svg></div>
+    <div><b>Tensión en hombros y cuello</b><span>Hombros subidos, cuello rígido o dolor al girar la cabeza.</span></div></div>
+
+  <div class="sig"><div class="ic"><svg viewBox="0 0 84 84">
+    <path d="M30 84V66h24v18z" fill="#6E6E6E"/>
+    <use href="#hand" transform="translate(42 66) scale(1.35)"/>
+    <path d="M10 22l8 6-8 6 8 6M74 22l-8 6 8 6-8 6" stroke="#D62828" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div><b>Hormigueo en manos o brazos</b><span>Sensación de adormecimiento o "corrientazos".</span></div></div>
+
+  <div class="sig"><div class="ic"><svg viewBox="0 0 84 84">
+    <path d="M18 80V58q0-8 8-8h6" stroke="#2E2E2E" stroke-width="16" fill="none" stroke-linecap="round"/>
+    <path d="M30 78Q28 52 46 44" stroke="#6E6E6E" stroke-width="30" fill="none" stroke-linecap="round"/>
+    <g transform="translate(56 40) rotate(55)"><use href="#head-s"/></g>
+    <path d="M70 18q-4 6 0 9q4-3 0-9zM78 30q-4 6 0 9q4-3 0-9z" fill="#D62828"/>
+    <path d="M60 64h14M60 72h10" stroke="#111" stroke-width="3" stroke-linecap="round"/></svg></div>
+    <div><b>Cansancio excesivo o sobrecarga</b><span>Sensación de peso en el cuerpo, falta de fuerza o de concentración.</span></div></div>
+</section>
+
+<!-- 5. QUÉ HACER -->
+<section>
+  <h2><i>4.</i> Qué hacer si aparecen molestias</h2>
+  <p class="intro">Siga estos pasos en orden:</p>
+
+  <div class="act"><div class="num">1</div><div class="ic"><svg viewBox="0 0 68 68"><path d="M22 6h24l16 16v24L46 62H22L6 46V22z" fill="#D62828"/><text x="34" y="40" text-anchor="middle" font-family="Arial Black,Arial" font-weight="900" font-size="15" fill="#fff">STOP</text></svg></div><div><b>Detenga la máquina de forma segura</b></div></div>
+
+  <div class="act"><div class="num">2</div><div class="ic"><svg viewBox="0 0 68 68">
+    <path d="M30 40L24 62M34 40L44 62" stroke="#2E2E2E" stroke-width="9" stroke-linecap="round"/>
+    <rect x="22" y="22" width="18" height="24" rx="8" fill="#6E6E6E"/>
+    <g transform="translate(31 14)"><use href="#head-s" transform="scale(.7)"/></g>
+    <path d="M52 30h12M58 24l6 6-6 6" stroke="#111" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M4 12v44" stroke="#D62828" stroke-width="4" stroke-dasharray="4 4"/></svg></div><div><b>Aléjese de la zona de peligro</b></div></div>
+
+  <div class="act"><div class="num">3</div><div class="ic"><svg viewBox="0 0 68 68">
+    <path d="M30 42L26 66M38 42L42 66" stroke="#2E2E2E" stroke-width="9" stroke-linecap="round"/>
+    <rect x="24" y="24" width="20" height="24" rx="8" fill="#6E6E6E"/>
+    <g transform="translate(34 16)"><use href="#head-f" transform="scale(.6)"/></g>
+    <path d="M26 30L20 18M42 30L48 18" stroke="#6E6E6E" stroke-width="7" stroke-linecap="round"/>
+    <use href="#hand" transform="translate(19 14) rotate(-15) scale(.3)"/>
+    <use href="#hand" transform="translate(49 14) rotate(15) scale(.3)"/></svg></div><div><b>Estiramientos suaves</b><small>De espalda y hombros, sin forzar.</small></div></div>
+
+  <div class="act"><div class="num">4</div><div class="ic"><svg viewBox="0 0 68 68">
+    <path d="M8 64V46q0-6 8-6h8q6 0 6 6v18z" fill="#6E6E6E"/>
+    <g transform="translate(20 30)"><use href="#head-f" transform="scale(.7)"/></g>
+    <path d="M44 64V46q0-6 6-6h8q6 0 6 6v18z" fill="#2E2E2E"/>
+    <g transform="translate(55 30)"><use href="#head-f" transform="scale(.7)"/></g>
+    <path d="M44 28q0-10 8-10h4" stroke="#111" stroke-width="0"/>
+    <path d="M45 24a11 11 0 0 1 20 0z" fill="#F5C518" stroke="#111" stroke-width="2"/><rect x="43" y="23" width="24" height="3" fill="#F5C518" stroke="#111" stroke-width="1.5"/>
+    <path d="M8 8h26v12H20l-6 6v-6H8z" fill="#fff" stroke="#111" stroke-width="2.5"/><path d="M14 14h14" stroke="#111" stroke-width="2.5"/></svg></div><div><b>Informe al supervisor</b></div></div>
+
+  <div class="act"><div class="num">5</div><div class="ic"><svg viewBox="0 0 68 68" fill="none" stroke="#111" stroke-width="5"><circle cx="34" cy="34" r="26"/><path d="M22 34a12 12 0 1 1 4 9" stroke-linecap="round"/><path d="M18 30l4 6 6-4" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 52L52 16" stroke="#D62828" stroke-width="6"/></svg></div><div><b>No reinicie hasta sentirse recuperado</b></div></div>
+
+  <div class="warn">Si el dolor o el hormigueo no mejoran con el descanso, avise de inmediato para recibir atención.</div>
+</section>
+
+<!-- 6. CONSEJOS -->
+<section>
+  <h2><i>5.</i> Consejos durante la operación</h2>
+
+  <div class="tip"><div class="ic"><svg viewBox="0 0 52 52"><use href="#hand" transform="translate(24 44) scale(.7)"/><path d="M6 12l14 14M20 12L6 26" stroke="#D62828" stroke-width="5" stroke-linecap="round" transform="translate(22 -8)"/><path d="M4 50q6-12 12-4t12-4" stroke="#555" stroke-width="3" fill="none" transform="translate(0 -4)"/></svg></div><div><b>Virutas:</b> nunca con la mano. Use gancho o cepillo con la máquina detenida.</div></div>
+
+  <div class="tip"><div class="ic"><svg viewBox="0 0 52 52" fill="none" stroke="#111" stroke-width="3.5"><path d="M10 44l22-22 8 8-22 22z" fill="#ECECEC"/><path d="M32 22l6-6 8 8-6 6" stroke="#F5C518" stroke-width="6"/></svg></div><div><b>Herramientas:</b> use la adecuada para cada trabajo y en buen estado.</div></div>
+
+  <div class="tip"><div class="ic"><svg viewBox="0 0 52 52" fill="none" stroke="#111" stroke-width="3.5"><rect x="6" y="12" width="40" height="28" fill="#ECECEC"/><path d="M6 12l40 28M46 12L6 40" stroke="#D62828" stroke-width="5"/></svg></div><div><b>Protecciones:</b> nunca las retire ni las anule.</div></div>
+
+  <div class="tip"><div class="ic"><svg viewBox="0 0 52 52"><use href="#hand" transform="translate(26 44) scale(.8)"/><path d="M6 6l40 40" stroke="#D62828" stroke-width="5" stroke-linecap="round"/></svg></div><div><b>Pieza girando:</b> no la toque ni mida con la máquina encendida.</div></div>
+
+  <div class="tip"><div class="ic"><svg viewBox="0 0 52 52" fill="none" stroke="#111" stroke-width="3.5"><circle cx="26" cy="26" r="19"/><circle cx="26" cy="26" r="6" fill="#F5C518"/></svg></div><div><b>Atención:</b> concentrado en el trabajo, sin celular ni distracciones.</div></div>
+</section>
+
+<!-- 7. DESPUÉS -->
+<section>
+  <h2><i>6.</i> Después de la operación</h2>
+
+  <div class="step"><div class="num">1</div><div><b>Apague y desconecte</b><p>Espere a que el plato se detenga por completo antes de intervenir.</p></div>
+    <div class="ic"><svg viewBox="0 0 58 58" fill="none" stroke="#111" stroke-width="3.5"><circle cx="29" cy="31" r="17"/><path d="M29 8v22" stroke="#D62828" stroke-width="5"/></svg></div></div>
+
+  <div class="step"><div class="num">2</div><div><b>Limpie con cepillo o brocha</b><p>Nunca con las manos: las virutas cortan aunque estén frías.</p></div>
+    <div class="ic"><svg viewBox="0 0 58 58"><rect x="6" y="14" width="34" height="14" rx="3" fill="#111"/><path d="M40 21h14" stroke="#111" stroke-width="5"/><path d="M10 28v18M17 28v18M24 28v18M31 28v18M38 28v18" stroke="#555" stroke-width="3"/></svg></div></div>
+
+  <div class="step"><div class="num">3</div><div><b>Guarde herramientas y llaves</b><p>Cada herramienta y medidor en su panel o lugar asignado.</p></div>
+    <div class="ic"><svg viewBox="0 0 58 58"><rect x="6" y="8" width="46" height="42" fill="#111"/><g fill="#fff"><circle cx="16" cy="18" r="2"/><circle cx="29" cy="18" r="2"/><circle cx="42" cy="18" r="2"/><circle cx="16" cy="30" r="2"/><circle cx="29" cy="30" r="2"/><circle cx="42" cy="30" r="2"/><circle cx="16" cy="42" r="2"/><circle cx="29" cy="42" r="2"/><circle cx="42" cy="42" r="2"/></g></svg></div></div>
+
+  <div class="step"><div class="num">4</div><div><b>Deje el puesto seguro y reporte</b><p>Piso despejado. Avise al supervisor sobre ruidos, fallas, daños o molestias físicas.</p></div>
+    <div class="ic"><svg viewBox="0 0 58 58"><path d="M29 6L54 50H4z" fill="#F5C518" stroke="#111" stroke-width="3.5" stroke-linejoin="round"/><path d="M29 22v14" stroke="#111" stroke-width="5" stroke-linecap="round"/><circle cx="29" cy="43" r="3" fill="#111"/></svg></div></div>
+</section>
+
+</div>
+
+<footer>
+  <p>Seguridad primero.<br>Postura correcta siempre.</p>
+  <span>DIMAM S.A.S</span>
+</footer>
+</body>
+</html>
